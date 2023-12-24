@@ -1,0 +1,12 @@
+
+syntax = "proto3";
+
+package org.kotpot.cosmos.pb.test.rpc;
+
+import "test/model.proto";
+
+service SearchService {
+
+  rpc search(model.SearchRequest) returns (model.SearchResponse);
+
+}
