@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package org.kotpot.cosmos.pb.common;
+
+message ProtocolServiceCall {
+  string service_name = 1;
+  string call_function = 2;
+  optional string token = 3;
+  bytes placeholder = 4;
+}

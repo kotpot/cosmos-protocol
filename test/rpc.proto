@@ -5,8 +5,8 @@ package org.kotpot.cosmos.pb.test.rpc;
 
 import "test/model.proto";
 
-service SearchService {
+service TestService {
 
-  rpc search(model.SearchRequest) returns (model.SearchResponse);
+  rpc platform(model.Platform) returns (model.Platform);
 
 }

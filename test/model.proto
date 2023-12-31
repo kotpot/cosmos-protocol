@@ -2,18 +2,8 @@ syntax = "proto3";
 
 package org.kotpot.cosmos.pb.test.model;
 
-message SearchRequest {
-  string query = 1;
-  int32 page_number = 2;
-  int32 results_per_page = 3;
-}
-
-message Foo {
-  reserved 2, 15, 9 to 11;
-  reserved "foo", "bar";
-}
-
-message SearchResponse {
-  bool has_next = 1;
-  repeated Foo list = 2;
+message Platform {
+  string os = 1;
+  string brd = 2;
+  string ver = 3;
 }
